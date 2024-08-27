@@ -1,0 +1,181 @@
+*{
+    text-align: center;
+}
+body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+.precoBTC{
+    width: 100%;
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+
+}
+.InputBTC{
+    font-size: 1.25rem;
+}
+.InputBTC Input{
+    border-radius: 10px;
+    background-color: #f2a900;
+}
+.CalcularBTC{
+    font-size: 1.25rem;
+    margin-top: 50px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #f2a900
+    
+    
+}
+
+.resultado{
+    font-size: 1.25rem;
+    width: 100%;
+    margin-top: 15px;
+    align-content: center;
+    align-self: center;
+    height: 100px;
+    width: 100%;
+    font-size: 2em;
+    color: #fff; 
+    text-align: center; 
+    animation: glow 1.5s infinite; /* Animação de brilho */
+}
+
+
+
+.glowing-text{
+    align-content: center;
+    align-self: center;
+    height: 100px;
+    width: 100%;
+    font-size: 2.55em;
+    color: #fff; 
+    text-align: center; 
+    animation: glow 1.5s infinite; /* Animação de brilho */
+}
+/*Deixando o texte piscando, ;D*/
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 25px #fff, 0 0 15px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 25px #ff0000, 0 0 30px #1900ff, 0 0 35px #1900ff;
+    }
+    50% {
+      text-shadow: 0 0 15px #fff, 0 0 25px #ffffff, 0 0 40px #1100ff, 0 0 60px #2f00ff, 0 0 50px #2600ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    100% {
+      text-shadow: 0 0 25px #fff, 0 0 15px #fff, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 25px #ff0000, 0 0 30px #1900ff, 0 0 35px #2600ff;
+    }
+  }
+
+  .background-animation {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para os símbolos de Bitcoin */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-100px) rotate(180deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.bitcoin-symbol {
+    position: absolute;
+    font-size: 3em;
+    color: #f2a900; /* Cor laranja do Bitcoin */
+    opacity: 0.8;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Criando múltiplos símbolos */
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100vw, 100vh);
+    }
+}
+
+/* animação e posição, para adicionar novos icones copie o anterio e adicione tambem no HTML */
+.bitcoin-symbol:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 7s;
+
+}
+
+.bitcoin-symbol:nth-child(2) {
+    top: 50%;
+    left: 80%;
+    animation-duration: 10s;
+
+}
+
+.bitcoin-symbol:nth-child(3) {
+    top: 70%;
+    left: 75%;
+    animation-duration: 12s;
+
+}
+
+.bitcoin-symbol:nth-child(4) {
+    top: 30%;
+    left: 90%;
+    animation-duration: 8s;
+
+}
+
+.bitcoin-symbol:nth-child(5) {
+    top: 35%;
+    left: 15%;
+    animation-duration: 5s;
+
+}
+.bitcoin-symbol:nth-child(6) {
+    top: 60%;
+    left: 15%;
+    animation-duration: 9s;
+
+}
+.bitcoin-symbol:nth-child(7) {
+    top: 10%;
+    left: 60%;
+    animation-duration: 11s;
+
+}
+.bitcoin-symbol:nth-child(8) {
+    top: 15%;
+    left: 40%;
+    animation-duration: 15s;
+
+}
+.bitcoin-symbol:nth-child(9) {
+    top: 85%;
+    left: 65%;
+    animation-duration: 15s;
+
+}
+.bitcoin-symbol:nth-child(10) {
+    top: 85%;
+    left: 33%;
+    animation-duration: 11s;
+
+}
