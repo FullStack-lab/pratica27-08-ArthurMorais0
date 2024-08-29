@@ -42,7 +42,11 @@ body {
     text-align: center; 
     animation: glow 1.5s infinite; /* Animação de brilho */
 }
-
+#PrecoBTC{
+    font-size: 1.75rem;
+    margin-top: 30px;
+    animation: glow 1.5s infinite; /* Animação de brilho */
+}
 
 
 .glowing-text{
